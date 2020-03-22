@@ -30,4 +30,3 @@ def count_words_in_markdown(markdown_text_content: str) -> int:
     markdown_text_content = re.sub(r'[0-9#]*\.', '', markdown_text_content)
 
     return len(markdown_text_content.split())
-
