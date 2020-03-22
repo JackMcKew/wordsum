@@ -1,6 +1,4 @@
-import os
 import re
-import sys
 
 def count_words_in_markdown(markdown_text_content: str) -> int:
 
