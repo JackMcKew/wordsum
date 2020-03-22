@@ -3,6 +3,7 @@
 Wordsum is a package for counting words within a folder of files recursively.
 
 ## Usage
+
 ``` python
 import wordsum
 
@@ -12,6 +13,7 @@ if __name__ == "__main__":
 ```
 
 ## Supported Formats
+
 Currently wordsum only supports markdown `.md` and jupyter notebooks `.ipynb`.
 
 ## Contribute
