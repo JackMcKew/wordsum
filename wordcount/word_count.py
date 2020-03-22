@@ -14,7 +14,6 @@ def count_words(path: str,file_types: List[str]) -> int:
         file_list = locate_files(path,file_type)
         file_content = read_path_list(file_list)
         for single_path, content in file_content.items():
-            ## TODO Add supported types list
             if file_type == '.md':
                 total_word_count += count_words_in_markdown(content)
             elif file_type == '.ipynb':
@@ -22,5 +21,9 @@ def count_words(path: str,file_types: List[str]) -> int:
 
     return total_word_count
 
+def list_supported_formats() -> List[str]:
+    from wordcount._io.read_files import supported_formats
+    print(f"Wordcount supports {list(supported_formats.keys())}")
+    return list(supported_formats.keys())
 
 
