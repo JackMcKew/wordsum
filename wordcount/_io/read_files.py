@@ -1,6 +1,7 @@
 import io
 import pathlib
-from typing import Optional, List, Dict
+from typing import List, Dict
+import nbformat
 
 def read_markdown(path: pathlib.Path) -> str:
     with open(path, 'r', encoding='utf8') as f:
@@ -8,7 +9,10 @@ def read_markdown(path: pathlib.Path) -> str:
     return text
 
 def read_jupyter(path: pathlib.Path):
-    return 'yes'
+    with io.open(path, 'r', encoding='utf-8') as f:
+        nb = nbformat.read(f,nbformat.NO_CONVERT)
+        # nb = current.read(f, 'json')
+    return nb
 
 supported_formats = {
     '.md': read_markdown,
