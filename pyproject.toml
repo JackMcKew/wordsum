@@ -8,6 +8,7 @@ authors = ["JackMcKew <jackmckew2@gmail.com>"]
 python = "^3.6"
 mypy = "^0.770"
 nbformat = "^5.0.4"
+black = "^19.10b0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
