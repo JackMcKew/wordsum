@@ -6,7 +6,7 @@
 #     file_content = read_path_list(file_list)
 #     print(file_content)
 
-from wordcount.word_count import count_words
+import wordcount
 
 if __name__ == "__main__":
-    print(count_words('./tests',['.md']))
+    print(wordcount.count_words('./tests',['.md']))
