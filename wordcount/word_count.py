@@ -13,7 +13,7 @@ def count_words(path: str,file_types: List[str]) -> int:
             continue
         file_list = locate_files(path,file_type)
         file_content = read_path_list(file_list)
-        for path, content in file_content.items():
+        for single_path, content in file_content.items():
             ## TODO Add supported types list
             if file_type == '.md':
                 total_word_count += count_words_in_markdown(content)

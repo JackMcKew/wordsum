@@ -2,11 +2,26 @@ import io
 import pathlib
 from typing import Optional, List, Dict
 
-def read_file(path: pathlib.Path) -> str:
-    with open(path,'r',encoding='utf-8') as f:
-        text_content = f.read()
+def read_markdown(path: pathlib.Path) -> str:
+    with open(path, 'r', encoding='utf8') as f:
+        text = f.read()
+    return text
 
-    return text_content
+def read_jupyter(path: pathlib.Path):
+    return 'yes'
+
+supported_formats = {
+    '.md': read_markdown,
+    '.ipynb': read_jupyter
+}
+
+def read_file(path: pathlib.Path) -> str:
+
+    if path.suffix not in supported_formats.keys():
+        print(f"{path.suffix} is not supported yet.")
+        return Exception
+
+    return supported_formats[path.suffix](path)
 
 def read_path_list(path_list: List[pathlib.Path]) -> Dict[pathlib.Path,str]:
 
