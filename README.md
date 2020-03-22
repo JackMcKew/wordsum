@@ -12,6 +12,12 @@ if __name__ == "__main__":
     wordsum.list_supported_formats()
 ```
 
+## Installation
+
+If you are using pip:
+
+    pip install wordsum
+
 ## Supported Formats
 
 Currently wordsum only supports markdown `.md` and jupyter notebooks `.ipynb`.
