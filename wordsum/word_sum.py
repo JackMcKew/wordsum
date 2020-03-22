@@ -1,7 +1,7 @@
-from wordcount._util.file_locate import locate_files
-from wordcount._io.read_files import read_path_list
-from wordcount._file_types.markdown import count_words_in_markdown
-from wordcount._file_types.jupyter import count_words_in_jupyter
+from wordsum._util.file_locate import locate_files
+from wordsum._io.read_files import read_path_list
+from wordsum._file_types.markdown import count_words_in_markdown
+from wordsum._file_types.jupyter import count_words_in_jupyter
 
 from typing import List
 
@@ -22,8 +22,8 @@ def count_words(path: str,file_types: List[str]) -> int:
     return total_word_count
 
 def list_supported_formats() -> List[str]:
-    from wordcount._io.read_files import supported_formats
-    print(f"Wordcount supports {list(supported_formats.keys())}")
+    from wordsum._io.read_files import supported_formats
+    print(f"wordsum supports {list(supported_formats.keys())}")
     return list(supported_formats.keys())
 
 

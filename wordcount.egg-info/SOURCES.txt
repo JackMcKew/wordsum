@@ -1,9 +1,0 @@
-README.rst
-pyproject.toml
-setup.py
-wordcount/__init__.py
-wordcount/__main__.py
-wordcount.egg-info/PKG-INFO
-wordcount.egg-info/SOURCES.txt
-wordcount.egg-info/dependency_links.txt
-wordcount.egg-info/top_level.txt

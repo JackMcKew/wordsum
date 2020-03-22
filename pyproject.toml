@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "wordcount"
+name = "wordsum"
 version = "0.1.0"
 description = ""
 authors = ["JackMcKew <jackmckew2@gmail.com>"]
