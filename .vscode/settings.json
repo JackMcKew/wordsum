@@ -4,4 +4,6 @@
     "cSpell.ignoreWords": [
         "nbformat"
     ],
+    "cornflakes.linter.executablePath": "C:\\Users\\jackm\\AppData\\Local\\pypoetry\\Cache\\virtualenvs\\wordsum-vMWqWI4O-py3.6\\Scripts\\flake8.exe",
+    "python.formatting.provider": "black"
 }
