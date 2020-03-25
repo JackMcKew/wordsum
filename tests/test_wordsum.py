@@ -8,7 +8,7 @@ from wordsum._io.read_files import read_path_list
 import wordsum
 
 def test_version():
-    assert __version__ == '0.1.0'
+    assert __version__ == '0.1.3'
 
 def test_markdown():
     text = textwrap.dedent("""
